@@ -2,6 +2,7 @@
 CLI app that uses MySQL and Javascript
 
 This is a simple CLI app that when run will ask a customer what item they would like to purchase and how much of that item. It validates that the inputs are correct and then checks that the customer is satisfied with the total. It then updates the server on the new quantity. 
+Uses "mysql" and "inquirer" from npm.
 
 How to use: 
 
