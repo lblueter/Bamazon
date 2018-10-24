@@ -1,10 +1,12 @@
-DROP IF EXISTS bamazon;
-CREATE DATABASE bamazon;
+DROP DATABASE IF EXISTS bamazon_DB;
+CREATE DATABASE bamazon_DB;
 
-USE bamazon;
+USE bamazon_DB;
 
-CREATE TABLE products (
-  item_id INT NOT NULL,
+SELECT * FROM products;
+
+CREATE TABLE products(
+  item_id INT NOT NULL AUTO_INCREMENT,
   product_name VARCHAR(50) NOT NULL,
   department_name VARCHAR(50) NULL,
   price DECIMAL(10, 4),
@@ -13,32 +15,32 @@ CREATE TABLE products (
 );
 
 INSERT INTO products (product_name, department_name, price, stock_quantity)
-VALUE ("AM4 Backplate", "Electronics", "4.00", "100")
+VALUE ("AM4 Backplate", "Electronics", "4.00", "100");
 
 INSERT INTO products (product_name, department_name, price, stock_quantity)
-VALUE ("Pet Rock", "Toys", "5.00", "10")
+VALUE ("Pet Rock", "Toys", "5.00", "10");
 
 INSERT INTO products (product_name, department_name, price, stock_quantity)
-VALUE ("Gr­ey Hoodie", "Clothing", "20.00", "50")
+VALUE ("Gr­ey Hoodie", "Clothing", "20.00", "50");
 
 INSERT INTO products (product_name, department_name, price, stock_quantity)
-VALUE ("New Book", "Education", "19.99", "36")
+VALUE ("New Book", "Education", "19.99", "36");
 
 INSERT INTO products (product_name, department_name, price, stock_quantity)
-VALUE ("Red Pen", "Education", "2.00", "500")
+VALUE ("Red Pen", "Education", "2.00", "500");
 
 INSERT INTO products (product_name, department_name, price, stock_quantity)
-VALUE ("HDMI Cable, 5ft", "Electronics", "15.00", "20")
+VALUE ("HDMI Cable, 5ft", "Electronics", "15.00", "20");
 
 INSERT INTO products (product_name, department_name, price, stock_quantity)
-VALUE ("NVIDIA GeForce GTX 1080ti", "Electronics", "499.99", "5")
+VALUE ("NVIDIA GeForce GTX 1080ti", "Electronics", "499.99", "5");
 
 INSERT INTO products (product_name, department_name, price, stock_quantity)
-VALUE ("Meme Hat", "Clothing", "50.00", "90")
+VALUE ("Meme Hat", "Clothing", "50.00", "90");
 
 INSERT INTO products (product_name, department_name, price, stock_quantity)
-VALUE ("Crystal Bepis", "Food", "10.00", "20")
+VALUE ("Crystal Bepis", "Food", "10.00", "20");
 
 INSERT INTO products (product_name, department_name, price, stock_quantity)
-VALUE ("Black Hoodie", "Clothing", "20.00", "50")
+VALUE ("Black Hoodie", "Clothing", "20.00", "50");
 
